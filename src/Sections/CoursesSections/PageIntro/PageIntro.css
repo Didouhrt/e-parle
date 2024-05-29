@@ -1,0 +1,36 @@
+.pageIntro {
+  position: relative;
+  background: linear-gradient(
+      110deg,
+      rgba(250, 153, 123, 0.618),
+      rgba(142, 148, 255, 0.171),
+      transparent 80%
+    ),
+    url("https://ik.imagekit.io/img5b6kvn/eParle/images/tr:w-600/other/pageIntro.jpg")
+      center center / cover;
+  height: 10rem;
+  height: 200px;
+  margin-top: 4.5rem;
+}
+.pageIntro_content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+.pageIntro_content div:nth-child(1) {
+  padding: 1rem 1.5rem;
+  width: max-content;
+}
+.pageIntro_content h3 {
+  font-weight: 600;
+}
+.pageIntro_content a {
+  color: var(--lightSecondaryColor);
+  font-size: 1rem;
+}
+.pageIntro_content a:hover {
+  color: var(--primaryColor);
+}

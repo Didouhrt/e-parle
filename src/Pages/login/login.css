@@ -1,0 +1,94 @@
+.login_section {
+  background: var(--colorWhite);
+  padding-block: unset;
+}
+.login_container h3 {
+  font-size: 35px;
+}
+.image_side {
+  background: var(--colorWhite);
+  height: 100vh;
+  height: 100svh;
+  flex: 3;
+}
+.image_side img {
+  height: 100%;
+}
+.login_side {
+  padding: 4rem 2rem 2rem;
+  flex: 1;
+}
+.login_side,
+.password_input,
+.form_separator {
+  position: relative;
+}
+.login_back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+
+.password_icon > * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  color: var(--extraLightSecondaryColor);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.password_icon > *:hover {
+  color: var(--primaryColor);
+}
+.forget_password_tag {
+  font-size: 0.8rem;
+  font-weight: 500;
+  align-self: flex-end;
+  color: var(--primaryColor);
+}
+.forget_password_tag:hover,
+.signInUp_btn:hover {
+  text-decoration: underline;
+}
+
+.form_separator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #bbb 40%,
+    transparent,
+    #bbb 60%,
+    transparent
+  );
+}
+
+.connect_with_button {
+  color: var(--secondaryColor);
+}
+.connect_with_button img {
+  width: 1.3rem;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 1000px) {
+  .image_side {
+    height: unset;
+  }
+  .login_section {
+    position: relative;
+    flex-direction: column;
+  }
+}

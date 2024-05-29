@@ -1,0 +1,14 @@
+.Experience_container {
+  padding: 2rem 0;
+  background: rgb(255, 250, 243);
+  background: linear-gradient(
+    292deg,
+    rgba(255, 250, 243, 1) 11%,
+    rgba(255, 255, 255, 1) 60%
+  );
+}
+@media screen and (min-width: 768px) {
+  .Experience_container {
+    padding: 2rem 2rem;
+  }
+}

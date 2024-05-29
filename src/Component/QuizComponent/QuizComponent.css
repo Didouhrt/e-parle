@@ -1,0 +1,39 @@
+.quiz_container {
+  padding: 2rem 4rem 4rem;
+}
+.playQuiz_container {
+  width: 100%;
+}
+.answer_container {
+  padding: 1rem;
+  border: 1px solid var(--lightSecondaryColor);
+  transition: var(--transition3);
+}
+.answer_container:is(:hover, :active, :focus) {
+  cursor: pointer;
+  background: var(--hoverSecondaryColor);
+}
+.inactive_check_btn ,.inactive_answer_container{
+  pointer-events: none;
+  opacity: 0.7;
+}
+.inactive_answer_container{
+opacity: .4;
+}
+.result_container {
+  padding: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.result_container p {
+  color: unset;
+}
+.result_icon {
+  font-size: 1.5rem;
+}
+.success {
+  background: rgb(25,135,80);
+}
+.failure {
+  background: rgb(222, 43, 43);
+}

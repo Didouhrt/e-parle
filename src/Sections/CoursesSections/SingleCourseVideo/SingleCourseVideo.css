@@ -1,0 +1,127 @@
+.singleCourseVideo_section {
+  padding-block: unset;
+}
+
+.courseDisplay_header {
+  background: var(--primaryColor);
+  color: #fff;
+}
+.courseDisplay_header_back_btn_container,
+.courseContent_header_back_btn_container {
+  border-radius: 50%;
+  background: var(--secondaryColor);
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition3);
+}
+.courseContent_header_back_btn_container {
+  background: transparent;
+  color: var(--primaryColor);
+}
+.courseDisplay_header span {
+  padding-left: 3rem;
+}
+
+.courseDisplay_video {
+  height: 50vh;
+}
+.courseDisplayTab_container {
+  --customTabContainerHeight: 3.4rem;
+  max-height: var(--customTabContainerHeight);
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+}
+.courseDisplayTab_container::-webkit-scrollbar {
+  display: none;
+}
+.active_courseDisplayTab_container {
+  overflow: auto;
+  --customTabContainerHeight: 100vh;
+  max-height: var(--customTabContainerHeight);
+}
+.tab_btn_container {
+  border-bottom: 1px solid var(--lightSecondaryColor);
+}
+.tab_btn_container span {
+  font-size: calc(1.1 * var(--base-font-size));
+  cursor: pointer;
+  line-height: 1;
+}
+.tab_btn_container span.active_tab_btn {
+  font-weight: 700;
+}
+
+.courseContent_header {
+  border-top: 1px solid var(--lightSecondaryColor);
+  border-bottom: 1px solid var(--lightSecondaryColor);
+}
+.courseContent_container .youtube_icon,
+.courseContent_chapter_check_btn_container {
+  color: var(--secondaryColor);
+  font-size: 1.1rem;
+}
+
+.chapter_title_container {
+  background: var(--inputHoverColor);
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.chapter_title_container h4 {
+  font-weight: 600;
+}
+.chapter_container {
+  padding: 0.5rem;
+  transition: var(--transition3);
+}
+.chapter_container.active_video {
+  background: var(--hoverSecondaryColor);
+}
+.chapter_title_container.active_title_chapter {
+  background: var(--activeChapterTitle);
+}
+.chapter_container span {
+  font-size: 0.8rem;
+}
+.courseContent_container .chapter_container:hover {
+  background: var(--hoverSecondaryColor);
+}
+.chapter_title_container {
+  border-bottom: 1px solid var(--hoverSecondaryColor);
+}
+@media screen and (min-width: 1024px) {
+  .singleCourseVideo_section {
+    flex-direction: unset !important;
+    align-items: start !important;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .courseContent_container {
+    order: -1;
+    border-right: 1px solid var(--hoverSecondaryColor);
+    width: 25%;
+    overflow-y: scroll;
+    height: 100vh;
+    height: 100svh;
+    position: relative;
+  }
+  .courseContent_header {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+  .courseDisplay_container {
+    flex: 1;
+    height: 100vh;
+  }
+  .courseDisplay_content {
+    overflow-y: scroll;
+  }
+
+  .courseDisplay_header span {
+    padding-left: unset;
+  }
+  .courseDisplay_video {
+    height: 65vh;
+  }
+}

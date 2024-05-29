@@ -1,0 +1,22 @@
+.underCoursesBtn {
+  display: block;
+  margin: 0 auto;
+}
+.aboveCoursesBtn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .underCoursesBtn {
+    display: none;
+  }
+  .aboveCoursesBtn {
+    display: unset;
+  }
+
+  .heading_btn {
+    justify-content: space-between !important;
+  }
+  .heading_title {
+    text-align: unset !important;
+  }
+}

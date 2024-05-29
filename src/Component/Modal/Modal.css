@@ -1,0 +1,27 @@
+
+.modal {
+  position: fixed;
+  background: rgb(0, 0, 0, 0.2);
+  inset: 0;
+  z-index: 100;
+  padding: 4rem 1rem;
+}
+.modal_content {
+  background: #fff;
+  padding: 1rem;
+  animation: scale 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+@keyframes scale {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal_buttons {
+  justify-content: flex-end;
+}
+.modal_buttons button {
+  padding: 0.5rem 1rem !important;
+}

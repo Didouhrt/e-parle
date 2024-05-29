@@ -1,0 +1,33 @@
+.testimonial_card {
+  box-shadow: 0px 2px 15px rgb(240, 242, 247);
+  border-radius: 0.5rem;
+  width: 330px;
+  transition: var(--transition3);
+  cursor: grabbing;
+  background: #fff;
+  padding: 1rem;
+}
+
+.testimonial_card:hover {
+  box-shadow: 0px 2px 15px #dcdee3;
+}
+.testimonial_avatar {
+  border-radius: 50%;
+  width: 3rem;
+  aspect-ratio: 1/1;
+}
+.testimonial_card p {
+  line-height: 25px;
+  height: 80px;
+  overflow-y: scroll;
+}
+.testimonial_card p::-webkit-scrollbar {
+  width: 0;
+}
+.testimonial_card span {
+  color: var(--lightSecondaryColor);
+}
+.quote_icon {
+  font-size: 1.5rem;
+}
+

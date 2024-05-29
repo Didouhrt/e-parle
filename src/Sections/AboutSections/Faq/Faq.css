@@ -1,0 +1,19 @@
+.faq_question{
+    border-bottom: 1px solid var(--extraLightSecondaryColor);
+    padding: 1rem .5rem ;
+    cursor: pointer;
+}
+.faq_question.active_question {
+    background: var(--inputHoverColor);
+}
+.faq_question h4 {
+    font-weight: 600;
+}
+.faq_icon{
+    font-size: 1.3rem;
+}
+.faq_item:not(:last-child) .faq_answer{
+    padding: 1rem .2rem ;
+    color: var(--secondaryColor);
+    border-bottom: 1px solid var(--extraLightSecondaryColor);
+}

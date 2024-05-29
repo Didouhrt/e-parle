@@ -1,0 +1,22 @@
+.secondaryCta_content h2 span {
+  color: var(--accentColor);
+}
+.secondaryCta_img_box {
+  position: relative;
+  overflow: hidden;
+  background: var(--activeChapterTitle);
+  aspect-ratio: 2.5/1.5;
+  width: min(550px, 100%);
+}
+.secondaryCta_img_box img {
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .secondaryCta_container {
+    flex-direction: unset !important;
+  }
+  .secondaryCta_content {
+    flex-shrink: 2.5;
+  }
+}

@@ -1,0 +1,12 @@
+h2 span {
+  color: var(--accentColor);
+}
+.contact_info_icon {
+  color: var(--accentColor);
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1025px) {
+  .contact_section_container {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}

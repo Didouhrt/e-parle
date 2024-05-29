@@ -1,0 +1,53 @@
+.course_card {
+  height: 100%;
+  border-radius: 0.5rem;
+  width: 330px;
+  transition: var(--transition3);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 2px 15px var(--courseCardBoxShadow);
+}
+.course_card:hover {
+  box-shadow: 0px 2px 15px #dcdee3;
+}
+.course_imgBox {
+  overflow: hidden;
+  height: 220px;
+  max-height: 220px;
+  position: relative;
+}
+.course_imgBox img {
+  height: 100%;
+  transition: var(--transition3);
+}
+.course_imgBox:hover img {
+  transform: scale(1.05);
+}
+.course_content {
+  padding: 1rem 0.5rem;
+  height: calc(100% - 220px);
+}
+.course_data span {
+  font-size: var(--font-size-small);
+}
+.course_data span:nth-child(1) {
+  background: #dcdee3;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.course_data span:not(:nth-child(1)) {
+  color: var(--lightSecondaryColor);
+}
+
+.course_content button span {
+  color: var(--lightSecondaryColor);
+  font-size: var(--font-size-medium);
+}
+
+.chevron_icon {
+  transition: var(--transition3);
+  color: var(--lightSecondaryColor);
+}
+.course_content button:hover .chevron_icon {
+  transform: translateX(0.2rem);
+}

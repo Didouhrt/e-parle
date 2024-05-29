@@ -1,0 +1,22 @@
+.note_timing {
+  background: var(--primaryColor);
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  width: 4rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.note_text {
+  background: var(--courseCardBoxShadow);
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  font-size: 1rem;
+  /*   margin-left: 5rem;
+ */
+}
+@media screen and (min-width: 1000px) {
+  .notes_container {
+    padding-inline: 3rem;
+  }
+}

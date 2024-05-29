@@ -1,0 +1,64 @@
+.review_form {
+  position: relative;
+}
+.review_form input {
+  width: 100%;
+}
+input:is(:hover, :active, :focus-within) {
+  background: var(--inputHoverColor);
+  border: 1px solid var(--primaryColor);
+}
+input::placeholder {
+  font-size: 0.9rem;
+  color: var(--lightSecondaryColor);
+  font-weight: 400;
+}
+
+.review_submit_btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: var(--hoverSecondaryColor);
+  cursor: not-allowed;
+}
+.review_submit_btn.active_review_input {
+  color: var(--accentColor);
+  cursor: pointer;
+}
+
+.single_review_container:not(:last-child) {
+  border-bottom: 1px solid var(--activeChapterTitle);
+}
+.review_avatar_img {
+  border-radius: 50%;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  background-color: var(--activeChapterTitle);
+}
+.review_user_info span {
+  font-size: 0.8rem;
+}
+.review_text {
+  margin-left: 3rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+.review_icons {
+  font-size: 1.2rem;
+  color: var(--primaryColor);
+}
+
+.updateInput {
+  background: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+  border-bottom: 1px solid var(--hoverSecondaryColor) !important;
+}
+.updateInput:hover {
+  background: unset !important;
+  border: unset !important;
+  border-bottom: 1px solid var(--hoverSecondaryColor) !important;
+}

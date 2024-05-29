@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) {
+  .ourHistory_container,
+  .sub_ourHistory_content {
+    flex-direction: unset !important;
+  }
+  .ourHistory_content {
+    order: -1;
+  }
+  .ourHistory_imgBox {
+    aspect-ratio: 0.5/.2;
+  }
+}

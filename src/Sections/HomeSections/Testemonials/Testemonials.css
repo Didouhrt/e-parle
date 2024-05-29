@@ -1,0 +1,29 @@
+.testemonials_section{
+   background: rgb(255, 250, 243);
+  background: linear-gradient(
+    80deg,
+    rgb(255, 251, 246) 31%,
+    rgb(255, 253, 253) 40%
+  );
+}
+.testemonials_btn_container {
+  display: none !important;
+}
+.mySwiper{
+  padding:2rem 0 4rem;
+}
+.mySwiper .swiper-pagination-bullet {
+  background-color: var(--accentColor);
+}
+@media screen and (min-width: 768px) {
+  .testemonials_btn_container {
+    display: flex !important;
+  }
+
+  .heading_btn {
+    justify-content: space-between !important;
+  }
+  .heading_title {
+    text-align: unset !important;
+  }
+}
